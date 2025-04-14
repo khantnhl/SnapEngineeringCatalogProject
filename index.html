@@ -1,31 +1,147 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>LA TV Shows | Home</title>
+    <title>HumansOfSnap | Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A Catalog of Shows Set in Los Angeles" />
-    <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="scripts.js"></script>
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   </head>
 
   <body>
+
+    <!-- Header -->
     <header class="main-header">
-      <h1 class="title">LA TV Shows</h1>
-    </header>
-    <div id="card-container"></div>
-    <div class="card" style="display: none">
-      <div class="card-content">
-        <h2>TV Show Title</h2>
-        <img src="" alt="TV Show Poster" />
-        <ul>
-          <li>Bullet Point 1</li>
-          <li>Bullet Point 2</li>
-          <li>Bullet Point 3</li>
-        </ul>
+      <h1 class="title">HumansOfSnap</h1>
+      <div class="search-container">
+        <input type="text" placeholder="Search" class="search-input"/>
+        <span class="clear-button" title="Clear">x</span>
       </div>
+
+        <div class="filter-container">
+          <button type="button" class="filter-toggle" >Filter</button>
+          <div class="filter-dropdown hidden" id="filter-dropdown">
+
+          </div>
+        </div>
+    </header>
+
+    <!-- Story Cards  -->
+    <div class="user-stories">
+      <template data-story-template>
+        <div class="story-card-container">
+          <div class="card-content">
+            <!-- <div class="card-image" data-img></div> -->
+            <h2 class="card-title" data-title></h2>
+            <p class="card-quote" data-quote></p>
+            <p class="card-story" data-story></p>
+            <p class="card-country" data-country></p>
+            <p class="card-genre" data-genre></p>
+            <p class="card-min_read" data-min_read></p>
+            <p class="card-storylength" data-storylength></p>
+            <p class="card-react" data-react></p>
+            <p class="card-published_year" data-published_year></p>
+
+          </div>
+
+          <div class="card-actions">
+            <button type="button" class="delete-button" data-delete>Delete</button>
+            <button type="button" class="edit-button" data-edit>Edit</button>
+          </div>
+
+          <div id="edit-form-container" class="hidden">
+            <form class="edit-story-form">
+              <div class="edit-input-wrap">
+                <input type="text" name="title" placeholder="Title" required/>
+              </div>
+              <div class="edit-input-wrap">
+                <input type="text" name="quote" placeholder="Quote" required/>
+              </div>
+              <div class="edit-input-wrap">
+                <input type="text" name="story" placeholder="Story" required/>
+              </div>
+              <div class="edit-input-wrap">
+                <input type="text" name="country" placeholder="Counter" required/>
+              </div>
+              <div class="edit-input-wrap">
+                <input type="text" name="genre" placeholder="genre" required/>
+              </div>
+              <div class="edit-input-wrap">
+                <input type="text" name="min_read" placeholder="min_read" required/>
+              </div>
+              <div class="edit-input-wrap">
+                <input type="text" name="storylength" placeholder="storylength" required/>
+              </div>
+              <div class="edit-input-wrap">
+                <input type="text" name="react" placeholder="react" required/>
+              </div>
+              <div class="edit-input-wrap">
+                <input type="text" name="published_year" placeholder="published_year" required/>
+              </div>
+              <button type="submit">Save Changes</button>
+            </form>
+          </div>
+        </div>
+      </template>
     </div>
-    <div class="footer">
-      <button onclick="quoteAlert();">Get A Quote!</button>
-      <button onclick="removeLastCard();">Remove A Card!</button>
-    </div>
+
+    <!-- Write Story Post Form -->
+    <section class="write-story-section">
+      <button type="button" class='write-button' data-write-story-toggle>Write a Story</button>
+      
+      <div id="add-form-container" class=" hidden">
+        <form id="add-form" class="form-container">
+          <div class="form-group">
+            <label for="form-title">Title:</label>
+            <input type="text" name="title" id="form-title" required />
+          </div>
+          <div class="form-group">
+            <label for="form-quote">Quotes:</label>
+            <input type="text" name="quote" id="form-quote" required />
+          </div>
+          <div class="form-group">
+            <label for="form-story">Story:</label>
+            <input type="text" name="story" id="form-story" required />
+          </div>
+          <div class="form-group">
+            <label for="form-country">Country:</label>
+            <input type="text" name="country" id="form-country" required />
+          </div>
+          <div class="form-group">
+            <label for="form-genre">Genre:</label>
+            <input type="text" name="genre" id="form-genre" required />
+          </div>
+          <div class="form-group">
+            <label for="form-min_read">Min_read:</label>
+            <input type="text" name="min_read" id="form-min_read" required />
+          </div>
+          <div class="form-group">
+            <label for="form-storylength">StoryLength:</label>
+            <input type="text" name="storylength" id="form-storylength" required />
+          </div>
+          <div class="form-group">
+            <label for="form-react">Reacts:</label>
+            <input type="text" name="react" id="form-react" required />
+          </div>
+          <div class="form-group">
+            <label for="form-published_year">Published Year:</label>
+            <input type="text" name="published_year" id="form-published_year" required />
+          </div>
+          <button type="submit" class="add-button">Submit</button>
+        </form>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Footer notes</p>
+    </footer>
+
+    <script type="module" src="scripts/main.js" defer></script>
+
   </body>
 </html>
