@@ -37,7 +37,7 @@ let modelObject = [
     },
     {
         title: "More than my Brother",
-        quote:"I actually do dream of becoming a singer one day.",
+        quote:"Benjamin thought the world was like our family; he was too trusting of people.",
         story:"He was more than my brother; he was my best friend. I wanted to be him. He was more athletic, had more friends, got more girls. And things were going great for him. He was managing a pizza place. He had two kids, my nephews. But after he lost his job he started dealing drugs. He didn’t last two months in the streets. Benjamin thought the world was like our family; he was too trusting of people. And Detroit is a very dangerous place to be trusting of people. The Detroit Police Department did nothing: no leads, no investigation. It’s like he wasn’t even human. You can just murder people in that city. After his death I forgot about school. I dropped my classes, started drinking more, partying more. There was a lot of sex, a lot of meaningless sex. Nothing seemed to matter. It was dark. I was so angry at God, because how could he let that happen? But it’s been four years now. And looking back—if he hadn’t been killed, so many other things don’t happen. I’d have never left Detroit. Benjamin was the one who always told me: ‘You’re special. You don’t have to stay here.’ But if he hadn’t been killed, I’d have never come to New York. And if I don’t come to New York, I don’t meet my best friend, which is my wife. Our wedding brought my whole family together for the first time since Benjamin’s death. It was love and joy again. My mom walking me down the aisle, after losing her son. It just meant the world to her. And if I hadn’t met my wife, we wouldn’t have a son on the way. We’re naming him Benjamin.",
         country: "US & Canada",
         genre: ["Life"],
@@ -61,7 +61,7 @@ let modelObject = [
     },
     {
         title: "Love on the Line",
-        quote:"I actually do dream of becoming a singer one day.",
+        quote:"I want to become a teacher when I grow up.",
         story:"Back in Myanmar my father was a farmer and he also went fishing. Along with my siblings, I used to attend school regularly. I was in Grade 2 when we left. We used to learn Burmese literature in school. But it all came to an end the day our house got burnt. The houses in our village were on fire. We couldn’t run to the jungle because it was on fire, too. We fled to another village but that village was also attacked. We were stranded so we fled again to a canal and stayed there for two days with no food. We made it across the border and now we live here in the camps,” Yacob explained. He continued: “I like being a leader. At the centre, I get the children together and them ask them to follow me when I am doing the actions. I tell them ‘Please, I am going to start reciting the poem, so follow me.’ I am a good boy and a quick learner. I also make other children laugh. It is fun. I want to learn more and more because I want to become a teacher when I grow up.\”\“They are slowly getting back to feeling normal again,” Noorkin said about her children. “I desire a bright future for my children where they can be what they want to be.\"",
         country: "Southeast Asia",
         genre: ["Life"],
