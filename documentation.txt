@@ -1,0 +1,6 @@
+Catalog page for story cards 
+
+Search - by title
+Sort - by ascending, descending alphabetical order
+    - by year
+Filter - by genre, by reacts
