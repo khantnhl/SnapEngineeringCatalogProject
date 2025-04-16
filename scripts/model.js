@@ -18,7 +18,7 @@ let modelObject = [
         country: "US & Canada",
         genre: ["Culture", "Immigrant"],
         min_read: 1.5,
-        storylength: 10,
+        storylength: 429,
         react : 273,
         published_year: 2021,
         imgUrl: "assets/story2.png"
